@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Form</title>
+</head>
+<body>
+    <form th:action="@{/submit}" th:object="${message}" method="post">
+    <textarea th:field="*{content}" rows="5" cols="50"></textarea><br/>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
